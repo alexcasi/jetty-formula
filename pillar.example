@@ -1,0 +1,18 @@
+jetty:
+  package: jetty9
+  service: jetty
+  # JETTY_HOME directory. This is set to the platform default.
+  home_directory: /usr/local/jetty
+  # Main Jetty configuration file.
+  config_file: /usr/local/etc/jetty/jetty
+  # JETTY_BASE directory.
+  base_directory: /home/jetty/jetty
+  # User to run Jetty under:
+  user: jetty
+  group: jetty
+  service_enabled: true
+  # Dict of ini files to install in ${jetty.base}/start.d/
+  start_ini_files:
+    # default.ini - contains some sane defaults
+    default:
+      source: salt://jetty/files/start.d/default.ini
