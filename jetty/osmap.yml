@@ -1,0 +1,5 @@
+FreeBSD:
+  home_directory: /usr/local/jetty
+  package: jetty9
+  service: jetty
+  config_file: /usr/local/etc/jetty/jetty

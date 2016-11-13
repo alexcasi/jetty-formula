@@ -1,0 +1,8 @@
+jetty:
+  base_directory: /home/jetty/jetty
+  user: jetty
+  group: jetty
+  service_enabled: true
+  start_ini_files:
+    default:
+      source: salt://jetty/files/start.d/default.ini
